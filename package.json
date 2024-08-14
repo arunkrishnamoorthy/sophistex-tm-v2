@@ -1,0 +1,27 @@
+{
+  "name": "timesheet",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/hana": "^1",
+    "@sap/cds": "^8",
+    "@sap/xssec": "^4.2.1",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.120.16"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-manageemployees": "cds watch --open manageemployees/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {},
+  "sapux": [
+    "app/manageemployees"
+  ]
+}

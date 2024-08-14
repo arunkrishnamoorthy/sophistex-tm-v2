@@ -1,0 +1,6 @@
+ID,firstName,lastName,manager_ID,email,isArchived,createdAt,createdBy,modifiedAt,modifiedBy
+1052636f-992b-42d4-8f2e-05d92fe8bbd3,firstName-1052636,lastName-1052636,1052636f-992b-42d4-8f2e-05d92fe8bbd3,email-1052636,true,2010-06-03T00:00:00.000Z,createdBy.mk7w@example.net,2016-09-08T00:00:00.000Z,modifiedBy.mk7w@example.org
+95546926-9b87-40c2-8600-774e0885f60d,firstName-9554692,lastName-9554692,95546926-9b87-40c2-8600-774e0885f60d,email-9554692,true,2022-07-20T00:00:00.000Z,createdBy.5osg4@example.org,2012-01-23T00:00:00.000Z,modifiedBy.5osg4@example.net
+9554693a-2469-45d2-914a-108352618c00,firstName-9554693,lastName-9554693,9554693a-2469-45d2-914a-108352618c00,email-9554693,false,2008-02-08T00:00:00.000Z,createdBy.5osg5@example.net,2014-12-30T00:00:00.000Z,modifiedBy.5osg5@example.org
+9554694a-441a-4b92-8eb6-aec3f63ec139,firstName-9554694,lastName-9554694,9554694a-441a-4b92-8eb6-aec3f63ec139,email-9554694,true,2002-12-27T00:00:00.000Z,createdBy.5osg6@example.org,2016-08-13T00:00:00.000Z,modifiedBy.5osg6@example.com
+95546954-2cf6-4def-b10e-8ad0112c9836,firstName-9554695,lastName-9554695,95546954-2cf6-4def-b10e-8ad0112c9836,email-9554695,false,2021-12-28T00:00:00.000Z,createdBy.5osg7@example.net,2011-08-17T00:00:00.000Z,modifiedBy.5osg7@example.org

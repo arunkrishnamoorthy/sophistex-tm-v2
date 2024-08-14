@@ -1,0 +1,6 @@
+AssetType,ID,mediaType,fileName,createdAt,createdBy,modifiedAt,modifiedBy
+AM,17682743-b544-4adc-976b-43642cc3d48b,mediaType-17682743,fileName-17682743,2022-11-13T00:00:00.000Z,createdBy.aj03b@example.net,2019-07-08T00:00:00.000Z,modifiedBy.aj03b@example.com
+EM,17682744-fcac-4862-9cca-9f663c773015,mediaType-17682744,fileName-17682744,2013-05-02T00:00:00.000Z,createdBy.aj03c@example.com,2018-09-05T00:00:00.000Z,modifiedBy.aj03c@example.net
+EM,17682745-d1f3-4d63-8148-e8a6d35d0018,mediaType-17682745,fileName-17682745,2002-01-09T00:00:00.000Z,createdBy.aj03d@example.org,2010-12-02T00:00:00.000Z,modifiedBy.aj03d@example.net
+EM,17682746-ef11-4d33-b4d1-b6dfab7181f8,mediaType-17682746,fileName-17682746,2011-09-11T00:00:00.000Z,createdBy.aj03e@example.com,2009-04-03T00:00:00.000Z,modifiedBy.aj03e@example.org
+AM,17682747-2485-40c6-826b-31c692508e2f,mediaType-17682747,fileName-17682747,2017-03-06T00:00:00.000Z,createdBy.aj03f@example.org,2005-10-27T00:00:00.000Z,modifiedBy.aj03f@example.com

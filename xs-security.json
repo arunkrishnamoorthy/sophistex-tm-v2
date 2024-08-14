@@ -1,0 +1,44 @@
+{
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.TimesheetAdmin",
+      "description": "TimesheetAdmin"
+    },
+    {
+      "name": "$XSAPPNAME.TimesheetManager",
+      "description": "TimesheetManager"
+    },
+    {
+      "name": "$XSAPPNAME.TimesheetUser",
+      "description": "TimesheetUser"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "TimesheetAdmin",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.TimesheetAdmin"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "TimesheetManager",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.TimesheetManager"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "TimesheetUser",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.TimesheetUser"
+      ],
+      "attribute-references": []
+    }
+  ]
+}

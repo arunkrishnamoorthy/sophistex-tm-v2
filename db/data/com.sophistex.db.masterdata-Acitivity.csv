@@ -1,0 +1,6 @@
+ID,name,description,isArchived,createdAt,createdBy,modifiedAt,modifiedBy
+16484731-a3ad-4fff-8414-2a08c8b4da8b,name-16484731,description-16484731,false,2003-10-31T00:00:00.000Z,createdBy.9tbp7@example.com,2003-07-10T00:00:00.000Z,modifiedBy.9tbp7@example.com
+15620428-22d9-4cd4-8a81-dadc4bf8f428,name-15620428,description-15620428,true,2018-02-25T00:00:00.000Z,createdBy.9asss@example.com,2018-08-19T00:00:00.000Z,modifiedBy.9asss@example.org
+15620429-ba15-4b23-bf61-db19a95398a6,name-15620429,description-15620429,false,2005-11-27T00:00:00.000Z,createdBy.9asst@example.com,2013-07-02T00:00:00.000Z,modifiedBy.9asst@example.net
+15620430-a6fc-4a1c-abd0-055053c29b90,name-15620430,description-15620430,true,2010-08-30T00:00:00.000Z,createdBy.9assu@example.org,2009-09-17T00:00:00.000Z,modifiedBy.9assu@example.org
+15620431-76cd-4700-b4fe-5cc5f8bccb83,name-15620431,description-15620431,false,2000-07-26T00:00:00.000Z,createdBy.9assv@example.org,2012-01-12T00:00:00.000Z,modifiedBy.9assv@example.org

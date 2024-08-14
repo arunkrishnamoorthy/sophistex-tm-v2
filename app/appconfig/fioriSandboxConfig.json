@@ -1,0 +1,68 @@
+{
+    "services": {
+      "LaunchPage": {
+        "adapter": {
+          "config": {
+            "catalogs": [],
+            "groups": [
+              {
+                "id": "home",
+                "title": "Home",
+                "isPreset": true,
+                "isVisible": true,
+                "isGroupLocked": false,
+                "tiles": []
+              },
+              {
+                "id": "idTimesheet",
+                "title": "Timesheet",
+                "isPreset": true,
+                "isVisible": true,
+                "isGroupLocked": false,
+                "tiles": [
+                  {
+                    "id": "idAppManageEmployee",
+                    "tileType": "sap.ushell.ui.tile.StaticTile",
+                    "properties": {
+                      "title": "Manage Employees",
+                      "subtitle": "manage",
+                      "targetURL": "#Employees-manage"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "NavTargetResolution": {
+        "config": {
+          "enableClientSideTargetResolution": true
+        }
+      },
+      "ClientSideTargetResolution": {
+        "adapter": {
+          "config": {
+            "inbounds": {
+              "ManageEmployees": {
+                "semanticObject": "Employees",
+                "action": "manage",
+                "title": "Manage Employees",
+                "signature": {
+                  "parameters": {
+                  },
+                  "additionalParameters": "ignored"
+                },
+                "resolutionResult": {
+                  "applicationType": "SAPUI5",
+                  "additionalInformation": "SAPUI5.Component=com.sophistex.ui.manageemployees",
+                  "url": "manageemployees/webapp"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

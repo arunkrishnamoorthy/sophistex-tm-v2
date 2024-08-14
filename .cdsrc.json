@@ -1,0 +1,27 @@
+{
+    "requires": {
+        "[development]": {
+            "db": {
+                "impl": "@cap-js/sqlite",
+                "credentials": {
+                    "url": ":memory:"
+                },
+                "kind": "sqlite"
+            },
+            "auth": {
+                "kind": "mocked",
+                "users": {
+                    "employee": { "password": "", "roles": ["TimesheetUser"] },
+                    "manager": { "password": "", "roles": ["TimesheetUser","TimesheetManager"] },
+                    "admin": { "password": "", "roles": ["TimesheetUser", "TimesheetAdmin"] }
+                }
+            }
+        },
+        "[hybrid]": {
+            "db": {
+                "kind": "hana",
+                "impl": "@cap-js/hana"
+            }
+        }
+    }
+}
