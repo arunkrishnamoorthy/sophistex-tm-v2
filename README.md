@@ -1,65 +1,24 @@
-# Getting Started
+# Steps to run this project 
 
-Welcome to your new project.
+### Clone the project 
 
-It contains these folders and files, following our recommended project layout:
+```sh
+  git clone https://github.com/arunkrishnamoorthy/sophistex-tm-v2.git timesheet
+  cd timesheet 
+```
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+### Install the dependencies. 
 
+Once you are in the timesheet folder run 
 
-## Next Steps
+```
+  npm install
+```
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+### Run the Project 
 
+Execute the following command to start the cap server 
 
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
-{
-  middlewares: true,
-  auth: { kind: 'xsuaa', vcap: { label: 'xsuaa' } },
-  db: {
-    impl: '@cap-js/sqlite',
-    credentials: { url: ':memory:' },
-    kind: 'sqlite'
-  }
-}
-
-"requires": {
-      "auth": "mocked"
-    }
-
-
-development 
-    - db -> sqlite -> auth: mocked 
-
-hybrid  
-    - db -> hana -> auth: xsuaa
-
-
-Annotation: 
-
-1. Service 
-
-    ABAP CDS: abap annotation -> 
-      @UI.LineItem: [{ position: 10, label: '' }]
-      abapFieldname: string;
-
-    CAP CDS: 
-      
-
-
-2. UI 
-    annotations.xml   
-
-      <Annotations>
-        <Annotation term="UI.LineItem">
-      </Annotation>
+```
+  cds watch --profile hybrid
+```
