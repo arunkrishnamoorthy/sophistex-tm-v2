@@ -26,3 +26,4 @@ entity Media: cuid, managed {
     mediaType: String;
     fileName: String;
 }
+

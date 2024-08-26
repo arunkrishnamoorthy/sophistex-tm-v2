@@ -1,0 +1,33 @@
+@port = 4004
+@protocol = http 
+@host = localhost 
+
+@employee = 1052636f-992b-42d4-8f2e-05d92fe8bbd3
+@mediaID = 17682744-fcac-4862-9cca-9f663c773015
+
+### Read the employee master
+GET {{protocol}}://{{host}}:{{port}}/odata/v4/timesheet/admin/Employees
+Authorization: Basic admin:
+
+### Read the single employee 
+GET {{protocol}}://{{host}}:{{port}}/odata/v4/timesheet/admin/Employees(ID = {{employee}}, IsActiveEntity = true)
+Authorization: Basic admin:
+
+### Get Media Entries
+GET {{protocol}}://{{host}}:{{port}}/odata/v4/timesheet/admin/Media
+Authorization: Basic admin:
+
+### Get the Download Template 
+GET {{protocol}}://{{host}}:{{port}}/odata/v4/timesheet/admin/Media(ID = {{mediaID}}, AssetType = 'EM')/content
+Authorization: Basic admin:
+
+### Create a Media Entry 
+POST {{protocol}}://{{host}}:{{port}}/odata/v4/timesheet/admin/Media
+Content-Type: application/json
+Authorization: Basic admin:
+
+{
+    "AssetType": "EM",
+    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "fileName": "EmployeesTemplate.xlsx"
+}
