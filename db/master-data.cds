@@ -2,6 +2,7 @@ namespace com.sophistex.db.masterdata;
 using { cuid, managed } from '@sap/cds/common';
 
 entity Employees: cuid, managed {
+    employeeId: String(20) @title: 'Employee ID';
     firstName: String(40) @title : '{i18n>firstName}';
     lastName: String(40) @title : '{i18n>lastName}';
     manager: Association to one Employees @title : 'Manager ID';
