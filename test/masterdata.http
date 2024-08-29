@@ -38,3 +38,12 @@ Authorization: Basic admin:
 Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 
 < ./employees_training_template.xlsx
+
+### Read Employee By ID 
+
+GET {{protocol}}://{{host}}:{{port}}/odata/v4/timesheet/admin/getEmployeesById(employeeId = '1001')
+Authorization: Basic admin:
+
+### Get User Attributes
+GET {{protocol}}://{{host}}:{{port}}/odata/v4/timesheet/admin/getUserAttributes()
+Authorization: Basic admin:

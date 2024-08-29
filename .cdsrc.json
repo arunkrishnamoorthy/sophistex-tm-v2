@@ -4,7 +4,7 @@
             "db": {
                 "impl": "@cap-js/sqlite",
                 "credentials": {
-                    "url": ":memory:"
+                    "database": "db.sqlite"
                 },
                 "kind": "sqlite"
             },

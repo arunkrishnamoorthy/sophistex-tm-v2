@@ -25,6 +25,10 @@ annotate service.Employees with @(
         },
         {
             $Type: 'UI.DataField',
+            Value: employeeId
+        },
+        {
+            $Type: 'UI.DataField',
             Value: firstName
         },
         {
@@ -38,6 +42,15 @@ annotate service.Employees with @(
         {
             $Type: 'UI.DataField',
             Value: email
+        },
+        {
+            $Type: 'UI.DataField',
+            Value: employeeId
+        },
+        {
+            $Type: 'UI.DataFieldForAction',
+            Action: 'adminService.setAsArchived',
+            Label: 'Set as Archived'
         }
     ],
     UI.Facets: [

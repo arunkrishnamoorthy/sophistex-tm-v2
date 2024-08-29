@@ -6,10 +6,28 @@ const XLSX = require('xlsx');
 class MasterDataService extends cds.ApplicationService {
 
     init() {
-        const { Media } = this.entities;
+        const { Media, Employees } = this.entities;
         this.on("READ", Media, this.handleTemplateDownload);
         this.on("UPDATE",Media, this.handleTemplateUpload);
+        this.on("setAsArchived", async (req) => {
+            let selectedIds = req.params.map((param) => param.ID);
+            try {
+                await UPDATE(Employees).set({ isArchived1: true }).where({ ID: selectedIds });
+                req.notify('Employee set to Archived');
+            } catch(err) {
+                req.error(err?.message || "Technical error: Contact support team");
+            }
+        });
+        this.on("getUserAttributes", (req) => {
+            return req.user.attr;
+        });
         super.init();
+    }
+
+    async getEmployeesById(employeeId) {
+        let { Employees } = this.entities;
+        let employees = await SELECT.one.from(Employees).where({ employeeId: employeeId });
+        return employees;
     }
 
     async handleTemplateDownload(req) {

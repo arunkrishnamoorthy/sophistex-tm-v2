@@ -7,7 +7,9 @@ service adminService @(
     entity Employees @(restrict: [{
         grant: ['*'],
         to   : ['TimesheetAdmin']
-    }]) as projection on md.Employees;
+    }]) as projection on md.Employees actions {
+        action setAsArchived() returns Boolean; 
+    };
 
     entity Activities @(restrict: [{
         grant: ['*'],
@@ -18,6 +20,9 @@ service adminService @(
         grant: ['*'],
         to   : ['TimesheetAdmin']
     }]) as projection on md.Media;
+
+    function getUserAttributes() returns String;
+    function getEmployeesById(employeeId: String) returns Employees;
 }
 
 annotate adminService.Employees with @odata.draft.enabled;
