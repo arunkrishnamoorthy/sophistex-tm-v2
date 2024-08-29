@@ -15,14 +15,16 @@
   "devDependencies": {
     "@cap-js/cds-types": "^0.6",
     "@cap-js/sqlite": "^1",
-    "@sap/ux-specification": "^1.120.16"
+    "@sap/ux-specification": "^1.120.17"
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-manageemployees": "cds watch --open manageemployees/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-manageemployees": "cds watch --open manageemployees/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-managetimesheet": "cds watch --open managetimesheet/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {},
   "sapux": [
-    "app/manageemployees"
+    "app/manageemployees",
+    "app/managetimesheet"
   ]
 }

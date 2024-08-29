@@ -9,6 +9,8 @@ entity Timesheet: cuid, managed {
     month: String(2);
     entries: Composition of many TimesheetEntries on entries.parent = $self;
     status: Association to TimesheetStatus;
+    virtual employeeName: String(100);
+    virtual managerName: String(100);
 }
 
 

@@ -28,6 +28,15 @@
                       "subtitle": "manage",
                       "targetURL": "#Employees-manage"
                     }
+                  },
+                  {
+                    "id": "idAppManageTimesheet",
+                    "tileType": "sap.ushell.ui.tile.StaticTile",
+                    "properties": {
+                      "title": "Timesheet",
+                      "subtitle": "overview",
+                      "targetURL": "#Timesheet-manage"
+                    }
                   }
                 ]
               }
@@ -57,6 +66,21 @@
                   "applicationType": "SAPUI5",
                   "additionalInformation": "SAPUI5.Component=com.sophistex.ui.manageemployees",
                   "url": "manageemployees/webapp"
+                }
+              },
+              "ManageTimesheet": {
+                "semanticObject": "Timesheet",
+                "action": "manage",
+                "title": "Timesheet",
+                "signature": {
+                  "parameters": {
+                  },
+                  "additionalParameters": "ignored"
+                },
+                "resolutionResult": {
+                  "applicationType": "SAPUI5",
+                  "additionalInformation": "SAPUI5.Component=com.sophistex.ui.managetimesheet",
+                  "url": "managetimesheet/webapp"
                 }
               }
             }
